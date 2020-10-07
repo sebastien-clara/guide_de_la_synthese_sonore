@@ -1,10 +1,9 @@
-// 'use strict';
-
 function getAudioCtx() {
     const audioCtx = new (window.webkitAudioContext || window.AudioContext)({ latencyHint: 0.00001 });
-    // audioCtx.destination.channelInterpretation = "discrete";
+//	audioCtx.destination.channelInterpretation = "discrete";
 
-    /* const unlockAudioContext = () => {
+
+    const unlockAudioContext = () => {
         if (audioCtx.state !== "suspended") return;
         const b = document.body;
         const events = ["touchstart", "touchend", "mousedown", "keydown"];
@@ -12,9 +11,8 @@ function getAudioCtx() {
         const clean = () => events.forEach(e => b.removeEventListener(e, unlock));
         events.forEach(e => b.addEventListener(e, unlock, false));
     }
-
     unlockAudioContext();
-    */
+
 
     return audioCtx;
 }
