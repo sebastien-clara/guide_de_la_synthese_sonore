@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Volume BPM</title>
+</head>
+
+<body style="margin: 0; position: absolute; width: 100%; height: 100%; overflow: hidden; background-color: transparent;">
+    <div id="Bpm" style="width: 100%; height: 100%; margin: 0; position: absolute; overflow: auto; display: flex; flex-direction: column;"></div>
+</body>
+
+<script src="../sources/FaustWasm2ScriptProcessor.js"></script>
+<script src="../sources/faust-ui.js"></script>
+<script src="../sources/tools.js"></script>
+
+<script>
+	var contexteAudio = getAudioCtx();
+	new FaustWasm2ScriptProcessor("../sources/Bpm").createDSP(contexteAudio, 1024).then(loadDsp);
+</script>
+</html>

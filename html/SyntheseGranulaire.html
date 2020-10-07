@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+	<title>Guide de la synthèse sonore</title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+
+
+
+
+
+<body class="bg-dark text-white">
+<div class="container text-justify">
+
+<p class="d-flex justify-content-between">
+<a href="../index.html">Retour au sommaire</a>
+<a href="SyntheseConcatenative.html">Suivant</a>
+</p>
+
+
+<h1 align="middle">Synthèse granulaire</h1>
+
+<p>Les origines de la synthèse granulaire remontent aux travaux de Dennis Gabor à la fin des années 1940 et aux recherches menées par Iannis Xenakis qu’il concrétise en composant <em>Concret PH</em> (1958) et <em>Analogique A</em> et <em>B</em> (1958-59). Cette technique de synthèse permet de produire une texture continue grâce à une énorme masse d’éléments discontinus. « Le son, tout comme la lumière, peut être considéré sous forme d’ondes ou particules. La synthèse granulaire construit des événements sonores à partir de milliers de grains sonores ». Avec cette analogie, un grain sonore correspond à un photon, à une particule. Seul, il n’est pas considéré comme un événement sonore. Mais pour le devenir, il est nécessaire d’agglomérer des milliers de grains sur un temps donné resserré.</p>
+
+<p>Pour générer ce type de structure sonore, nous disposons de plusieurs contrôles qui peuvent évoluer dans le temps. Cependant, l’origine des grains implique certaines spécificités de réglage. En effet, si nous utilisons des oscillateurs comme source sonore, nous devons déterminer la forme d’onde (voire une technique de synthèse) et la fréquence de chaque grain. Toutefois, si nous utilisons un enregistrement, nous devons déterminer le fragment à extraire et donc la position initiale de lecture dans l’échantillon, le sens et la vitesse de lecture.</p>
+
+<p>Après ces spécificités, les autres paramètres sont communs aux différentes sources sonores. Pour chaque grain, nous devons choisir une intensité et la formater par une enveloppe d’amplitude particulière. La durée d’un grain est généralement de l’ordre du millième de seconde et elle peut varier entre une et cent millisecondes.</p>
+
+<p>Nous pouvons pulvériser les grains de manière synchrone ou asynchrone. La différence entre ces deux modes de pulvérisation réside dans la gestion du temps pour organiser les grains. La synthèse granulaire synchrone séquence ses grains suivant un tempo fixe. Tandis que la synthèse granulaire asynchrone pulvérise ses grains dans un intervalle de temps donné. En outre, nous devons déterminer la densité de la pulvérisation des grains de ces deux modes.</p>
+
+<p>En synthèse granulaire, nous générons des masses sonores qu’on qualifie de nuages. Ils peuvent être structurés de deux manières. La première consiste à délimiter un nuage à partir d’une bande de fréquence plus ou moins large et qui peut évoluer dans le temps (cf. colonne de droite de la figure - Curtis Roads, <em>Microsound</em>, Cambridge, The MIT Press, 2001, p. 105). Le second procédé est de structurer un nuage par un empilement de strates. Cette dernière structure s’apparente à de la synthèse additive (cf. colonne de gauche de la figure). Si nous utilisons une synthèse asynchrone sur ce dernier type de structure, le tempo de chaque strate peut être indépendant des autres. En effet, nous avons la possibilité d’animer nos nuages par une pulsation commune ou obtenir des nuages à tempo arythmique.</p>
+
+<p align="middle"><img src="../ressources/nuagesGranulaire.png" class="img-fluid"></p>
+
+
+<p>Le dernier paramètre de contrôle en synthèse granulaire porte sur la gestion de l’espace. Suivant son dispositif de projection sonore, nous pouvons positionner et animer un nuage dans un champ stéréophonique (gauche, droite et profondeur) ou dans un espace à deux, voire à trois dimensions (gauche, droite, devant, derrière, voire en haut et en bas).
+Dans le tableau, nous récapitulons les différents paramètres de la synthèse granulaire. Dans les deux premières lignes, nous distinguons l’origine de la source sonore entre un oscillateur ou un échantillon.</p>
+
+<table class="table table-striped table-dark table-sm table-responsive-sm text-center">
+	<tr>
+		<td>Forme d’onde (voire une technique de synthèse)</td> <td>Échantillon</td>
+	</tr>
+	<tr>
+		<td>Fréquence</td> <td>Position initiale, sens et vitesse de lecture</td>
+	</tr>
+	<tr>
+		<td colspan="2">Intensité</td>
+	</tr>
+	<tr>
+		<td colspan="2">Forme de l’enveloppe d’amplitude</td>
+	</tr>
+	<tr>
+		<td colspan="2">Durée du grain</td>
+	</tr>
+	<tr>
+		<td colspan="2">Mode de pulvérisation (synchrone ou asynchrone)</td>
+	</tr>
+	<tr>
+		<td colspan="2">Densité de la pulvérisation</td>
+	</tr>
+	<tr>
+		<td colspan="2">Structure du nuage (empilement ou agglomérat)</td>
+	</tr>
+	<tr>
+		<td colspan="2">Position dans l’espace et mouvement du nuage</td>
+	</tr>
+</table>
+
+<iframe style="border:0; width:100%; height:400px;" src="instruSynthGranulaire.html"></iframe>
+
+
+<p>Lorsque nous utilisons un échantillon comme source sonore, nous pouvons séquencer des fragments issus de cet échantillon et généralement nous sélectionnons les grains aléatoirement. La synthèse concaténative est conçue sur le même principe, on concatène des fragments audio. Néanmoins, des différences majeures distinguent ces deux techniques de synthèse et je les établis au début de la page suivante.</p>
+
+
+
+
+<p class="d-flex justify-content-between">
+<a href="../index.html">Retour au sommaire</a>
+<a href="SyntheseConcatenative.html">Suivant</a>
+</p>
+
+
+</div>
+</body>
+
+
+
+
+
+
+
+</html>
+
+

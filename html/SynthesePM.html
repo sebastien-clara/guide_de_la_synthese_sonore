@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+	<title>Guide de la synthèse sonore</title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+
+
+
+
+
+<body class="bg-dark text-white">
+<div class="container text-justify">
+
+
+<p class="d-flex justify-content-between">
+<a href="../index.html">Retour au sommaire</a>
+<a href="SyntheseTableOnde.html">Suivant</a>
+</p>
+
+
+<h1 align="middle">Synthèse par modèles physiques</h1>
+
+<p>Les concepts de la synthèse par modèles physiques remontent au XIXe siècle. À cette période, les études scientifiques sur la nature des objets vibrants décrivent généralement le comportement des instruments de musique à l’aide de modèles mécaniques et acoustiques comme le traité <em>The Theory of Sound</em>, publié pour la première fois en 1877 et rédigé par John William Strutt Rayleigh. Le développement de l’électronique a augmenté cette tendance, car les équations pour décrire un circuit électrique sont analogues à celles utilisées pour décrire un système vibratoire mécanique et acoustique. Par exemple, Harry Ferdinand Olson modélise électroniquement des instruments de musique dans son ouvrage qu’il intitule <em>Musical Engineering</em> et illustre remarquablement cette analogie (cf. la figure suivate - Eduardo Reck Miranda, <em>Computer Sound Design, Synthesis techniques and programming</em>, New York, Focal Press, 2002, p. 70).</p>
+
+<p align="middle"><img src="../ressources/Musical Engineering.gif" class="img-fluid"></p>
+
+
+<p>À l’ère numérique, ces méthodes ont été adaptées pour être traitées par les ordinateurs. Néanmoins, une modélisation précise d’un instrument de musique nécessite une quantité importante de calcul. Des techniques ont dû être mises en œuvre pour contourner ce problème et selon la catégorie établie par Nicolas Castagné et Claude Cadoz, cinq techniques de synthèse par modèles physiques coexistent.</p>
+
+<p>Le modèle mathématique de la première technique de cette catégorie de synthèse s’appuie sur les lois de la physique newtonienne. Cette méthode a été utilisée par Lejaren Hiller et Pierre-Michel Ruiz pour modéliser une corde au début des années 1970.</p>
+
+<p>La deuxième technique consiste à modéliser des objets à l’aide de particules (dites masses) qui sont reliées par des ressorts. Cette méthode a été employée à la fin des années 1970 par Claude Cadoz et elle s’appuie aussi sur les lois de la physique newtonienne. Néanmoins, elle est plus intuitive par rapport à la précédente puisque l’utilisateur n’est pas obligé d’avoir des connaissances en physique pour l’utiliser. Il construit en effet des objets virtuels en connectant des masses avec des ressorts.</p>
+
+<iframe style="border:0; width:100%; height:400px;" src="instruSynthPM_massesRessorts.html"></iframe>
+
+
+<p>La troisième méthode est la synthèse par guide d’onde. Elle est imaginée par Julius O. Smith durant les années 1980. Pour cela, il perfectionne l’algorithme de synthèse de cordes pincées réalisé par Karplus et Strong. Le principe de la synthèse par guide d’onde consiste à réinjecter dans le système des lignes retard pour simuler la propagation naturelle d’une onde dans une corde ou un tube.</p>
+
+<iframe style="border:0; width:100%; height:400px;" src="instruSynthPM_guideOnde.html"></iframe>
+
+
+<p>La quatrième méthode est l’approche modale (ou spectrale). Elle est mise au point durant les années 1980 et elle consiste à représenter une structure vibrante par une série d’oscillateurs élémentaires indépendants, dotés de données de couplage. Prosaïquement, une base regroupe une collection de données qualifiant la résonance des matériaux par des fréquences, des amplitudes et des coefficients d’amortissement.</p>
+
+<iframe style="border:0; width:100%; height:400px;" src="instruSynthPM_modale.html"></iframe>
+
+
+<p>La dernière méthode de synthèse par modèles physiques est basée sur la modélisation des propriétés structurelles des instruments de musique les plus pertinentes pour calculer leur résonance.</p>
+
+
+
+
+
+
+<p>L’augmentation de la puissance de calcul de nos machines permet à la synthèse par modèles physiques aujourd’hui de concurrencer la synthèse par échantillonnage pour imiter les instruments mécaniques. Toutefois, nos machines ne sont pas suffisamment puissantes pour simuler un orchestre symphonique exclusivement en synthèse par modèles physiques. De plus, cette dernière technique peine à imiter certains timbres comme les cuivres.</p>
+
+
+
+
+<p class="d-flex justify-content-between">
+<a href="../index.html">Retour au sommaire</a>
+<a href="SyntheseTableOnde.html">Suivant</a>
+</p>
+
+
+
+</div>
+</body>
+
+
+
+
+
+
+
+</html>
+
+
