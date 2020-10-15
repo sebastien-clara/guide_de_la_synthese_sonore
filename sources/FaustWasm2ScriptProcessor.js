@@ -460,4 +460,4 @@ class FaustWasm2ScriptProcessor {
 
 
 
-// Usage : phaseRode.createDSP(audioCtx, 1024).then(dsp => dsp.connect(audioCtx.destination));
+// Usage : phaseRhode.createDSP(audioCtx, 1024).then(dsp => dsp.connect(audioCtx.destination));
