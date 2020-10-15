@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Guide de la synthèse sonore</title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../shared/style.css">
+</head>
+
+
+
+
+
+
+<body class="bg-dark text-white">
+
+<div class="container text-justify">
+
+<p class="d-flex justify-content-between">
+<a href="../../index.html">Retour au sommaire</a>
+<a href="automaticControl.html">Suivant</a>
+</p>
+
+
+<h1 align="middle">Les signaux élémentaires</h1>
+<p>La forme d’onde est la représentation graphique du mouvement de l’onde dans le temps. De plus, cette forme est en relation directe avec le contenu spectral du son qu’elle génère. La forme d’onde qui produit le son le plus simple en termes de structure et de perception est l’onde sinusoïdale. Le son de cette forme d’onde est constitué d’un unique partiel. Ce type de son n’existe pas à l’état naturel, bien qu’il se rapproche d’un son produit par un diapason. Le son produit par cette forme d’onde n’est généralement pas exploité tel quel pour son timbre, mais on l’utilise comme composant élémentaire pour construire des structures plus complexes en les empilant (synthèse additive), en les multipliant (synthèse par modulation en anneau) ou en modulant l’entrée d’un paramètre avec la sortie d’un autre (synthèse par modulation). J'aborde certaines de ces techniques de synthèse dans suite de ces pages.</p>
+
+<p align="middle"><img src="../../ressources/waveSinSpectr.gif" class="img-fluid"></p>
+
+<iframe style="border:0; width:100%; height:400px;" src="../shared/frameSinus.html"></iframe>
+
+ 
+
+<p>En superposant des formes d’ondes sinusoïdales et en construisant des structures harmoniques particulières, on tend vers d’autres formes d’ondes géométriquement simples. Ces formes d’ondes sont devenues des formes classiques en synthèse sonore et elles sont livrées par défaut dans plupart des synthétiseurs.</p>
+
+<p>La forme d’onde carrée est un signal à deux états stables qui ont la même durée. Son spectre est constitué d’harmoniques impaires. L’amplitude de chaque partiel est le produit de l’amplitude de la fondamentale et de l’inverse de son rang harmonique.</p>
+
+<p align="middle"><img src="../../ressources/waveSquareSpectr.gif" class="img-fluid"></p>
+
+<iframe style="border:0; width:100%; height:400px;" src="../shared/frameSquare.html"></iframe>
+
+
+
+<p>La forme d’onde triangulaire produit uniquement des harmoniques impaires comme la forme d’onde carrée, mais l’amplitude de chaque partiel est le produit de l’amplitude de la fondamentale et de l’inverse de son rang harmonique au carré. Les harmoniques d’une forme d’onde triangle sont donc moins prégnantes que celles de la forme d’onde carrée.</p>
+
+<p align="middle"><img src="../../ressources/waveTriSpectr.gif" class="img-fluid"></p>
+
+<iframe style="border:0; width:100%; height:400px;" src="../shared/frameTriangle.html"></iframe>
+
+
+
+<p>La forme d’onde en dents de scie produit le spectre harmonique le plus riche des formes d’ondes élémentaires de la synthèse sonore. Le spectre de cette forme d’onde possède toutes les harmoniques et l’amplitude de chaque partiel est le produit de l’amplitude de la fondamentale et de l’inverse de son rang harmonique.</p>
+
+<p align="middle"><img src="../../ressources/waveSawSpectr.gif" class="img-fluid"></p>
+
+<iframe style="border:0; width:100%; height:400px;" src="../shared/frameSaw.html"></iframe>
+
+
+<p>Le bruit est intrinsèque aux instruments percussifs, mais aussi dans une certaine mesure, à la plupart des instruments de l’orchestre. Par conséquent, le bruit est aussi un signal utile en synthèse. Le bruit le plus commun est le bruit blanc. Ce signal est généré par un nombre aléatoire à chaque échantillon. En théorie, il contient toutes les fréquences et il est donc apériodique. Cette propriété théorique de contenir toutes les fréquences lui a conféré sa dénomination de blanc par analogie à l’effet de combiner toutes les couleurs de la gamme visuelle humaine pour obtenir la couleur blanche.</p>
+
+<p align="middle"><img src="../../ressources/waveFormWhiteNoise.gif" class="img-fluid"></p>
+
+<iframe style="border:0; width:100%; height:400px;" src="../shared/frameWhiteNoise.html"></iframe>
+
+
+
+<p>Il existe de nombreux autres signaux, mais le principe est identique à ceux que je viens de présenter. Leur intérêt réside dans leur contenu spectral ou leur forme d’onde. En effet, les signaux ne sont pas exclusivement employés pour générer des sons, ils sont aussi utilisés pour contrôler automatiquement d’autres paramètres. Je traite ce sujet dans la prochaine page.</p>
+
+
+
+<p class="d-flex justify-content-between">
+<a href="../../index.html">Retour au sommaire</a>
+<a href="automaticControl.html">Suivant</a>
+</p>
+
+</div>
+</body>
+
+
+
+
+
+
+
+</html>
+
+
